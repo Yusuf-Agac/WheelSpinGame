@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: 1685236312653763646}
   - component: {fileID: 1685236312653763647}
   m_Layer: 5
-  m_Name: ui_text_reward_item
+  m_Name: ui_text_reward_item_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 1685236313131438499}
   - component: {fileID: 1685236313131438496}
   m_Layer: 5
-  m_Name: ui_image_reward_item
+  m_Name: ui_image_reward_item_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
