@@ -7,11 +7,6 @@ public class WheelSpinGame : MonoBehaviour
     [SerializeField] private PageTweenController playgroundPageTweenController;
     [SerializeField] private PageTweenController losePageTweenController;
 
-    private void Awake()
-    {
-        Exit();
-    }
-
     public void Spin()
     {
         
@@ -25,5 +20,6 @@ public class WheelSpinGame : MonoBehaviour
     public void Bomb()
     {
         playgroundPageTweenController.ShowOut();
+        losePageTweenController.ShowIn();
     }
 }
