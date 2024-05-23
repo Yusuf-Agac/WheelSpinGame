@@ -52,7 +52,6 @@ namespace UI.WheelSpin.Levels
             _currentLevelBarPool = new PrefabPool<Transform>(currentLevelItemPrefab.transform, currentLevelItemCount, currentLevelContainer);
             
             FillBars();
-            StartCoroutine(ShiftTest());
         }
 
         private void FillBars()
@@ -136,15 +135,6 @@ namespace UI.WheelSpin.Levels
                 item.text.color = level % 30 == 0 ? otherSuperZoneTextColor 
                     : level % 5 == 0 ? otherSafeZoneTextColor 
                     : otherDefaultZoneTextColor;
-            }
-        }
-
-        private IEnumerator ShiftTest()
-        {
-            while (true)
-            {
-                yield return new WaitForSeconds(2);
-                Shift();
             }
         }
     }
