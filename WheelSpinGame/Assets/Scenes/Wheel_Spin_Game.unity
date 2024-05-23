@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 13489546}
+  - component: {fileID: 13489547}
   m_Layer: 5
   m_Name: ui_rect_wheel_spin_playground
   m_TagString: Untagged
@@ -165,6 +166,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &13489547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13489545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15e61a902331404ebb7cd83ad180fa8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &27901067
 GameObject:
   m_ObjectHideFlags: 0
@@ -7964,6 +7977,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1155147064}
+  - component: {fileID: 1155147065}
   m_Layer: 5
   m_Name: ui_rect_wheel_spin
   m_TagString: Untagged
@@ -7993,6 +8007,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1155147065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155147063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3df0f796f718734f877a092ebda1476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playgroundPageTweenController: {fileID: 13489547}
+  losePageTweenController: {fileID: 1518731351}
 --- !u!1001 &1155758925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10461,6 +10489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1518731350}
+  - component: {fileID: 1518731351}
   m_Layer: 5
   m_Name: ui_rect_wheel_spin_lose
   m_TagString: Untagged
@@ -10491,6 +10520,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1518731351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518731349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15e61a902331404ebb7cd83ad180fa8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1522999377 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4764291583622663812, guid: bb9349b2ddac38948918be49fdca5080,
