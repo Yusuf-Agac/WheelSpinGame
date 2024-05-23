@@ -4,7 +4,7 @@ namespace Tween
 {
     public class PageTweenController : MonoBehaviour
     {
-        [SerializeField] private ITweenItem[] _tweenItems;
+        [SerializeReference, SubclassPicker] private TweenItem[] _tweenItems;
         
         private void Awake()
         {
@@ -13,6 +13,7 @@ namespace Tween
         
         public void ShowIn()
         {
+            
             foreach (var tweenItem in _tweenItems) tweenItem.ShowIn();
         }
         

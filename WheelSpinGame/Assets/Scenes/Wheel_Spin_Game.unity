@@ -155,8 +155,8 @@ RectTransform:
   - {fileID: 631044985}
   - {fileID: 1953110164}
   - {fileID: 1829720246}
-  - {fileID: 1882944283}
   - {fileID: 1251534919}
+  - {fileID: 1882944283}
   - {fileID: 1301161234}
   m_Father: {fileID: 1155147064}
   m_RootOrder: 0
@@ -178,6 +178,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15e61a902331404ebb7cd83ad180fa8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _tweenItems:
+  - rid: 2305832548605100034
+  - rid: 2305832548605100035
+  - rid: 2305832548605100036
+  - rid: 2305832548605100037
+  - rid: 2305832548605100038
+  references:
+    version: 2
+    RefIds:
+    - rid: 2305832548605100034
+      type: {class: PositionTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 31
+        duration: 2
+        item: {fileID: 1953110164}
+        outPosition: {x: -500, y: 0}
+    - rid: 2305832548605100035
+      type: {class: PositionTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 31
+        duration: 2
+        item: {fileID: 1829720246}
+        outPosition: {x: 0, y: 400}
+    - rid: 2305832548605100036
+      type: {class: PositionTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 31
+        duration: 2
+        item: {fileID: 1251534919}
+        outPosition: {x: 0, y: -1500}
+    - rid: 2305832548605100037
+      type: {class: PositionTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 31
+        duration: 2
+        item: {fileID: 1882944283}
+        outPosition: {x: 500, y: 0}
+    - rid: 2305832548605100038
+      type: {class: ImageColorTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 3
+        duration: 0.7
+        item: {fileID: 631044986}
+        outColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &27901067
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,7 +518,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 799.4424
+      value: 799.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -599,7 +643,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1399.4424
+      value: 1399.8754
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -724,7 +768,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 399.44238
+      value: 399.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -1050,7 +1094,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1599.4424
+      value: 1599.8754
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -1105,7 +1149,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215985616}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1540,7 +1584,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 599.4424
+      value: 599.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -2032,6 +2076,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 349418901}
+  - component: {fileID: 349418902}
   m_Layer: 5
   m_Name: ui_rect_collection
   m_TagString: Untagged
@@ -2062,6 +2107,46 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &349418902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349418900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15e61a902331404ebb7cd83ad180fa8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tweenItems:
+  - rid: 2305832551757643785
+  - rid: 2305832551757643786
+  - rid: 2305832551757643787
+  references:
+    version: 2
+    RefIds:
+    - rid: 2305832551757643785
+      type: {class: PositionTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 24
+        duration: 2
+        item: {fileID: 399401312}
+        outPosition: {x: 0, y: 300}
+    - rid: 2305832551757643786
+      type: {class: PositionTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 24
+        duration: 2
+        item: {fileID: 1873481215}
+        outPosition: {x: 0, y: -1500}
+    - rid: 2305832551757643787
+      type: {class: ImageColorTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 2
+        duration: 0.7
+        item: {fileID: 1666917520}
+        outColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &352089442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2343,7 +2428,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 399401314}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 483691098}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 483691100}
+        m_TargetAssemblyTypeName: Tween.PageTweenController, Assembly-CSharp
+        m_MethodName: ShowIn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 349418902}
+        m_TargetAssemblyTypeName: Tween.PageTweenController, Assembly-CSharp
+        m_MethodName: ShowOut
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &399401314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2598,7 +2719,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 799.4424
+      value: 799.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -2723,7 +2844,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 799.4424
+      value: 799.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -2897,6 +3018,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 483691099}
+  - component: {fileID: 483691100}
   m_Layer: 5
   m_Name: ui_rect_main_menu
   m_TagString: Untagged
@@ -2917,8 +3039,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 27901068}
-  - {fileID: 1663730256}
   - {fileID: 686624716}
+  - {fileID: 1663730256}
   m_Father: {fileID: 1296594240}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2927,6 +3049,46 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &483691100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483691098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15e61a902331404ebb7cd83ad180fa8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tweenItems:
+  - rid: 2305832551757643782
+  - rid: 2305832551757643783
+  - rid: 2305832551757643784
+  references:
+    version: 2
+    RefIds:
+    - rid: 2305832551757643782
+      type: {class: PositionTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 31
+        duration: 2
+        item: {fileID: 686624716}
+        outPosition: {x: -3000, y: 0}
+    - rid: 2305832551757643783
+      type: {class: PositionTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 31
+        duration: 2
+        item: {fileID: 1663730256}
+        outPosition: {x: 3000, y: 0}
+    - rid: 2305832551757643784
+      type: {class: ImageColorTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 7
+        duration: 0.7
+        item: {fileID: 27901069}
+        outColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &507506846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3022,7 +3184,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 399.44238
+      value: 399.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -3424,7 +3586,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1199.4424
+      value: 1199.8754
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -3847,7 +4009,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1599.4424
+      value: 1599.8754
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -4678,7 +4840,7 @@ GameObject:
   - component: {fileID: 686624718}
   - component: {fileID: 686624717}
   m_Layer: 5
-  m_Name: ui_button_collect_rewards
+  m_Name: ui_button_collection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4698,7 +4860,7 @@ RectTransform:
   m_Children:
   - {fileID: 476148845}
   m_Father: {fileID: 483691099}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4748,7 +4910,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 686624718}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 349418900}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 483691100}
+        m_TargetAssemblyTypeName: Tween.PageTweenController, Assembly-CSharp
+        m_MethodName: ShowOut
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 349418902}
+        m_TargetAssemblyTypeName: Tween.PageTweenController, Assembly-CSharp
+        m_MethodName: ShowIn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &686624718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5017,7 +5215,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 599.4424
+      value: 599.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -5272,7 +5470,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 599.4424
+      value: 599.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -5552,7 +5750,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 599.4424
+      value: 599.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -5807,7 +6005,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 399.44238
+      value: 399.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -5932,7 +6130,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1199.4424
+      value: 1199.8754
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -6182,7 +6380,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1199.4424
+      value: 1199.8754
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -6432,7 +6630,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 199.44238
+      value: 199.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -7611,7 +7809,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 199.44238
+      value: 199.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -7736,7 +7934,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1399.4424
+      value: 1399.8754
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -7992,9 +8190,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155147063}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 13489546}
@@ -8444,7 +8642,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 999.4424
+      value: 999.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -8799,7 +8997,7 @@ RectTransform:
   m_Children:
   - {fileID: 527578129}
   m_Father: {fileID: 13489546}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9220,7 +9418,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 399.44238
+      value: 399.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -9345,7 +9543,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 199.44238
+      value: 199.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -9622,7 +9820,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1199.4424
+      value: 1199.8754
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -10374,7 +10572,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 599.4424
+      value: 599.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -10532,6 +10730,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15e61a902331404ebb7cd83ad180fa8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _tweenItems:
+  - rid: 2305832551757643776
+  - rid: 2305832551757643777
+  - rid: 2305832551757643778
+  - rid: 2305832551757643779
+  - rid: 2305832551757643780
+  - rid: 2305832551757643781
+  references:
+    version: 2
+    RefIds:
+    - rid: 2305832551757643776
+      type: {class: PositionTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 30
+        duration: 2
+        item: {fileID: 2089419396}
+        outPosition: {x: 200, y: 900}
+    - rid: 2305832551757643777
+      type: {class: PositionTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 25
+        duration: 2
+        item: {fileID: 7009147002193650495}
+        outPosition: {x: 300, y: -600}
+    - rid: 2305832551757643778
+      type: {class: PositionTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 30
+        duration: 2
+        item: {fileID: 7009147000804433831}
+        outPosition: {x: -300, y: -600}
+    - rid: 2305832551757643779
+      type: {class: PositionTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 30
+        duration: 2
+        item: {fileID: 1828360839}
+        outPosition: {x: 600, y: 0}
+    - rid: 2305832551757643780
+      type: {class: PositionTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 30
+        duration: 2
+        item: {fileID: 1042554079}
+        outPosition: {x: -200, y: 900}
+    - rid: 2305832551757643781
+      type: {class: ImageColorTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 8
+        duration: 2
+        item: {fileID: 1528359227}
+        outColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!224 &1522999377 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4764291583622663812, guid: bb9349b2ddac38948918be49fdca5080,
@@ -10834,7 +11084,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1399.4424
+      value: 1399.8754
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -11035,7 +11285,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 999.4424
+      value: 999.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -11074,6 +11324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1641439573}
+  - component: {fileID: 1641439574}
   m_Layer: 5
   m_Name: ui_rect_collect_rewards
   m_TagString: Untagged
@@ -11103,6 +11354,38 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1641439574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641439572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15e61a902331404ebb7cd83ad180fa8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tweenItems:
+  - rid: 2305832551757643789
+  - rid: 2305832551757643788
+  references:
+    version: 2
+    RefIds:
+    - rid: 2305832551757643788
+      type: {class: ImageColorTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 14
+        duration: 0.7
+        item: {fileID: 2130532229}
+        outColor: {r: 0, g: 0, b: 0, a: 0}
+    - rid: 2305832551757643789
+      type: {class: PositionTweenItem, ns: Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 31
+        duration: 2
+        item: {fileID: 215985617}
+        outPosition: {x: 0, y: -800}
 --- !u!1 &1663730255
 GameObject:
   m_ObjectHideFlags: 0
@@ -11116,7 +11399,7 @@ GameObject:
   - component: {fileID: 1663730258}
   - component: {fileID: 1663730257}
   m_Layer: 5
-  m_Name: ui_button_go_back
+  m_Name: ui_button_play_roulette
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11136,7 +11419,7 @@ RectTransform:
   m_Children:
   - {fileID: 1905465548}
   m_Father: {fileID: 483691099}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11186,7 +11469,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1663730258}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1155147063}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 13489547}
+        m_TargetAssemblyTypeName: Tween.PageTweenController, Assembly-CSharp
+        m_MethodName: ShowIn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 483691100}
+        m_TargetAssemblyTypeName: Tween.PageTweenController, Assembly-CSharp
+        m_MethodName: ShowOut
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1663730258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11396,7 +11715,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 799.4424
+      value: 799.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -11999,7 +12318,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 999.4424
+      value: 999.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -12249,7 +12568,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 999.4424
+      value: 999.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -12524,7 +12843,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 799.4424
+      value: 799.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -12695,7 +13014,7 @@ RectTransform:
   - {fileID: 615395368}
   - {fileID: 1444277763}
   m_Father: {fileID: 13489546}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12797,7 +13116,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1599.4424
+      value: 1599.8754
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -12922,7 +13241,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 399.44238
+      value: 399.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -13409,7 +13728,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 199.44238
+      value: 199.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -13571,7 +13890,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1599.4424
+      value: 1599.8754
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -13956,7 +14275,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 999.4424
+      value: 999.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -14231,7 +14550,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1399.4424
+      value: 1399.8754
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -15121,7 +15440,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1163957822}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1301161233}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1001 &2313314348922268863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15217,7 +15548,7 @@ PrefabInstance:
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 199.44238
+      value: 199.87537
       objectReference: {fileID: 0}
     - target: {fileID: 6124477130144475301, guid: ce94bc958a4f2534e89f08d551a8d12e,
         type: 3}
@@ -16581,7 +16912,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7009147000677676997}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1301161233}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &9194554381960952496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16625,7 +16968,67 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7009147001312425030}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1641439572}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1301161233}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1155147063}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: set_isStatic
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 13489547}
+        m_TargetAssemblyTypeName: Tween.PageTweenController, Assembly-CSharp
+        m_MethodName: ShowOut
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1641439574}
+        m_TargetAssemblyTypeName: Tween.PageTweenController, Assembly-CSharp
+        m_MethodName: ShowIn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &9194554382137208266
 MonoBehaviour:
   m_ObjectHideFlags: 0

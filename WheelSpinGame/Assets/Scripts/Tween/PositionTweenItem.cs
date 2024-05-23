@@ -1,33 +1,34 @@
 ﻿using System;
 using DG.Tweening;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Tween
 {
     [Serializable]
-    public class PositionTweenItem : ITweenItem
+    public class PositionTweenItem : TweenItem
     {
         [SerializeField] private RectTransform item;
-        [SerializeField] private Ease easeType;
-        [SerializeField] private float duration;
-        [SerializeField] private Vector3 outPosition;
+        [SerializeField] private Vector2 outPosition;
         
-        private Vector3 _inPosition;
+        private Vector2 _inPosition;
         
-        public void SaveInitialValues()
+        public override void SaveInitialValues()
         {
-            _inPosition = item.position;
+            _inPosition = item.anchoredPosition;
         }
         
-        public void ShowIn()
+        public override void ShowIn()
         {
-            item.DOMove(_inPosition, duration).SetEase(easeType);
+            item.anchoredPosition = outPosition;
+            item.DOKill(false);
+            item.DOAnchorPos(_inPosition, duration).SetEase(easeType);
         }
 
-        public void ShowOut()
+        public override void ShowOut()
         {
-            item.DOMove(outPosition, duration).SetEase(easeType);
+            item.anchoredPosition = _inPosition;
+            item.DOKill(false);
+            item.DOAnchorPos(outPosition, duration).SetEase(easeType);
         }
     }
 }
