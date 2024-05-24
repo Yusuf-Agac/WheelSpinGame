@@ -2274,7 +2274,7 @@ MonoBehaviour:
   - rid: 2305832551757643790
   - rid: 2305832551757643791
   - rid: 2305832551757643792
-  - rid: 2305832551757643793
+  - rid: 2305832564225736704
   - rid: 2305832551757643794
   references:
     version: 2
@@ -2300,13 +2300,6 @@ MonoBehaviour:
         duration: 1
         item: {fileID: 1073066769699001486}
         outPosition: {x: 0, y: 300}
-    - rid: 2305832551757643793
-      type: {class: PositionTweenItem, ns: UI.Tween, asm: Assembly-CSharp}
-      data:
-        easeType: 25
-        duration: 1
-        item: {fileID: 1073066769154370687}
-        outPosition: {x: 0, y: -1000}
     - rid: 2305832551757643794
       type: {class: ImageColorTweenItem, ns: UI.Tween, asm: Assembly-CSharp}
       data:
@@ -2314,6 +2307,13 @@ MonoBehaviour:
         duration: 1
         item: {fileID: 1073066770647809858}
         outColor: {r: 0, g: 0, b: 0, a: 0}
+    - rid: 2305832564225736704
+      type: {class: PositionTweenItem, ns: UI.Tween, asm: Assembly-CSharp}
+      data:
+        easeType: 25
+        duration: 1
+        item: {fileID: 0}
+        outPosition: {x: 0, y: -1500}
 --- !u!1 &1073066770323139716
 GameObject:
   m_ObjectHideFlags: 0
