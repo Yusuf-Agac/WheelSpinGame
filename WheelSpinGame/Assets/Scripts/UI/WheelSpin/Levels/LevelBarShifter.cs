@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using DG.Tweening;
 using General.Pool;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Image = UnityEngine.UI.Image;
 
 namespace UI.WheelSpin.Levels
@@ -52,6 +50,29 @@ namespace UI.WheelSpin.Levels
             
             FillBars();
         }
+        
+        public void Reset()
+        {
+            _currentLevelIndex = 0;
+            otherLevelContainer.anchoredPosition = Vector2.zero;
+            currentLevelContainer.anchoredPosition = Vector2.zero;
+            ResetLevelTexts();
+        }
+
+        private void ResetLevelTexts()
+        {
+            for (var i = 0; i < otherLevelItemCount; i++)
+            {
+                _otherLevelBarItems[i].text.text = (i + 1).ToString();
+                UpdateBarItemColors(false, _otherLevelBarItems[i], i + 1);
+            }
+            
+            for (var i = 0; i < currentLevelItemCount; i++)
+            {
+                _currentLevelBarItems[i].text.text = (i + 1).ToString();
+                UpdateBarItemColors(true, _currentLevelBarItems[i], i + 1);
+            }
+        }
 
         private void FillBars()
         {
@@ -82,7 +103,7 @@ namespace UI.WheelSpin.Levels
             }
         }
         
-        private void Shift()
+        public void Shift()
         {
             _currentLevelIndex++;
             ShiftOtherBar();
@@ -135,6 +156,13 @@ namespace UI.WheelSpin.Levels
                     : level % 5 == 0 ? otherSafeZoneTextColor 
                     : otherDefaultZoneTextColor;
             }
+        }
+
+        public int GetZone()
+        {
+            return (_currentLevelIndex + 1) % 30 == 0 ? 2 
+                   : (_currentLevelIndex + 1) % 5 == 0 ? 1 
+                   : 0;
         }
     }
 }
