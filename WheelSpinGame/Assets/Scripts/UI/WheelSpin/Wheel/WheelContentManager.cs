@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Inventory;
+﻿using System.Collections.Generic;
 using Item;
 using TMPro;
 using UnityEngine;
@@ -23,15 +21,15 @@ namespace UI.WheelSpin.Wheel
         
         private WheelSpinner _wheelSpinner;
         
-        private void Awake()
+        public WheelSlot GetSlot(int index)
         {
-            SetupWheel(wheelTypes[1]);
+            return slots[Mathf.Clamp(index, 0, slots.Count - 1)];
         }
         
-        public void SetupWheel(WheelType wheelType)
+        public void SetupWheel(int index)
         {
-            SetupWheelVisuals(wheelType);
-            SetupSlots(wheelType);
+            SetupWheelVisuals(wheelTypes[index]);
+            SetupSlots(wheelTypes[index]);
         }
 
         private void SetupWheelVisuals(WheelType wheelType)

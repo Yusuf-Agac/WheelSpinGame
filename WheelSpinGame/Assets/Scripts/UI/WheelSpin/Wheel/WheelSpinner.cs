@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using UI.WheelSpin.General;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,6 +7,7 @@ namespace UI.WheelSpin.Wheel
 {
     public class WheelSpinner : MonoBehaviour
     {
+        [SerializeField] private WheelSpinGame wheelSpinGame;
         [SerializeField] private RectTransform wheel;
         [SerializeField] private RectTransform indicator;
         [Space(10)]
@@ -40,6 +42,13 @@ namespace UI.WheelSpin.Wheel
             }
             _spinCoroutine = null;
             SetButtonInteractables(true);
+            wheelSpinGame.SpinEnd(CalculateSlotIndex());
+        }
+
+        private int CalculateSlotIndex()
+        {
+            var slotArea = 360f / slotsCount;;
+            return Mathf.RoundToInt(wheel.rotation.eulerAngles.z / slotArea);
         }
 
         private void SetButtonInteractables(bool interactable)

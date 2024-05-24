@@ -7,7 +7,7 @@ using UnityEngine.UI;
 namespace UI.WheelSpin.Wheel
 {
     [Serializable]
-    internal class WheelSlot
+    public class WheelSlot
     {
         public Image image;
         public TMP_Text text;
