@@ -56,16 +56,16 @@ namespace Item
 
         public List<InventoryItem> GetItemsByWheelType(WheelType wheelType)
         {
-            var items = new List<InventoryItem>();
+            var itemList = new List<InventoryItem>();
             for (var i = 0; i < wheelType.slotCount; i++)
             {
                 var item = new InventoryItem(GetCumulativeRandomItem());
-                item.amount = (int)(item.amount * wheelType.amountMultiplier);
-                items.Add(item);
+                item.amount = Mathf.RoundToInt(item.amount * wheelType.amountMultiplier);
+                itemList.Add(item);
             }
-            AddSpecialItemsToWheel(wheelType, items);
+            AddSpecialItemsToWheel(wheelType, itemList);
 
-            return items;
+            return itemList;
         }
 
         private void AddSpecialItemsToWheel(WheelType wheelType, List<InventoryItem> items)

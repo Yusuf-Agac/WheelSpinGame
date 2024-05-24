@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
@@ -63,7 +62,7 @@ namespace Inventory
             File.WriteAllText(Application.persistentDataPath + "/inventory.json", json);
         }
 
-        public void LoadInventory()
+        private void LoadInventory()
         {
             if (!File.Exists(Application.persistentDataPath + "/inventory.json")) return;
             
