@@ -8,14 +8,15 @@ namespace UI.WheelSpin.Wheel
     {
         [SerializeField] private RectTransform wheel;
         [SerializeField] private RectTransform indicator;
+        [Space(10)]
         [SerializeField] private Button spinButton;
         [SerializeField] private Button exitButton;
-        
+        [Space(10)]
         [SerializeField] private int slotsCount;
-        
+        [SerializeField] private float maxDegreeOfIndicator = 60f;
+        [Space(10)]
         [SerializeField] private Vector2 startForceBounds;
         [SerializeField] private float friction;
-        [SerializeField] private float maxDegreeOfIndicator = 60f;
         
         private Coroutine _spinCoroutine;
         

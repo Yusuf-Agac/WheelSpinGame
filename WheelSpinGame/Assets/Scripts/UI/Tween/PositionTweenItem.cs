@@ -2,7 +2,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-namespace Tween
+namespace UI.Tween
 {
     [Serializable]
     public class PositionTweenItem : TweenItem

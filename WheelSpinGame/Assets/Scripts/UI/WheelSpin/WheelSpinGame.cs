@@ -1,25 +1,27 @@
-using System;
-using Tween;
+using UI.Tween;
 using UnityEngine;
 
-public class WheelSpinGame : MonoBehaviour
+namespace UI.WheelSpin
 {
-    [SerializeField] private PageTweenController playgroundPageTweenController;
-    [SerializeField] private PageTweenController losePageTweenController;
-
-    public void Spin()
+    public class WheelSpinGame : MonoBehaviour
     {
+        [SerializeField] private PageTweenController playgroundPageTweenController;
+        [SerializeField] private PageTweenController losePageTweenController;
+
+        public void Spin()
+        {
         
-    }
+        }
 
-    public void Exit()
-    {
-        playgroundPageTweenController.ShowOut();
-    }
+        public void Exit()
+        {
+            playgroundPageTweenController.ShowOut();
+        }
 
-    public void Bomb()
-    {
-        playgroundPageTweenController.ShowOut();
-        losePageTweenController.ShowIn();
+        public void Bomb()
+        {
+            playgroundPageTweenController.ShowOut();
+            losePageTweenController.ShowIn();
+        }
     }
 }

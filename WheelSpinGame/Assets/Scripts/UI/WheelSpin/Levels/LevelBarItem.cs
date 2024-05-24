@@ -1,9 +1,8 @@
 ﻿using System;
 using TMPro;
-using UnityEngine;
 using UnityEngine.UI;
 
-namespace WheelSpin.Levels
+namespace UI.WheelSpin.Levels
 {
     [Serializable]
     internal class LevelBarItem

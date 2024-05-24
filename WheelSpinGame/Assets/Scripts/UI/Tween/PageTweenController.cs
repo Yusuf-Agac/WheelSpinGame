@@ -1,7 +1,7 @@
-﻿using UnityEngine;
-using UnityEngine.Serialization;
+﻿using General.CustomEditor;
+using UnityEngine;
 
-namespace Tween
+namespace UI.Tween
 {
     public class PageTweenController : MonoBehaviour
     {

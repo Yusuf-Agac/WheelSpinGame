@@ -5,7 +5,6 @@ using General.Pool;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
-using WheelSpin.Levels;
 using Image = UnityEngine.UI.Image;
 
 namespace UI.WheelSpin.Levels
