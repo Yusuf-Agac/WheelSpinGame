@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a3c5867b3694062844f63f3daf93a5b, type: 3}
+  m_Name: NewItem 6
+  m_EditorClassIdentifier: 
+  id: 6
+  itemName: gold_case
+  icon: {fileID: 21300000, guid: 61676f9a1ab28504aafd282361b3d0b6, type: 3}
+  description: 
+  rarity: 3
+  baseAmount: 1
