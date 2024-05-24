@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using Inventory;
+using UI.WheelSpin.Wheel;
+using UnityEngine;
 
 namespace Item
 {
@@ -6,14 +9,15 @@ namespace Item
     public class ItemCollection : ScriptableObject
     {
         public Item[] items;
+        public Item bomb;
 
         public float chanceOfCommon;
         public float chanceOfUncommon;
         public float chanceOfRare;
         public float chanceOfEpic;
         public float chanceOfLegendary;
-        
-        public Item GetCumulativeRandomItem()
+
+        private Item GetCumulativeRandomItem()
         {
             var random = Random.Range(0f, 1f);
             var total = chanceOfCommon + chanceOfUncommon + chanceOfRare + chanceOfEpic + chanceOfLegendary;
@@ -46,7 +50,35 @@ namespace Item
         private Item GetItemByRarity(Rarity rarity)
         {
             var itemsByRarity = System.Array.FindAll(items, item => item.rarity == rarity);
+            if (itemsByRarity.Length == 0 && rarity != Rarity.Common) return GetItemByRarity(rarity - 1);
             return itemsByRarity[Random.Range(0, itemsByRarity.Length)];
+        }
+
+        public List<InventoryItem> GetItemsByWheelType(WheelType wheelType)
+        {
+            var items = new List<InventoryItem>();
+            for (var i = 0; i < wheelType.slotCount; i++)
+            {
+                var item = new InventoryItem(GetCumulativeRandomItem());
+                item.amount = (int)(item.amount * wheelType.amountMultiplier);
+                items.Add(item);
+            }
+            AddSpecialItemsToWheel(wheelType, items);
+
+            return items;
+        }
+
+        private void AddSpecialItemsToWheel(WheelType wheelType, List<InventoryItem> items)
+        {
+            if (wheelType.isBomb)
+            {
+                items[Random.Range(0, items.Count)] = new InventoryItem(bomb);
+            }
+
+            if (wheelType.isLegendary)
+            {
+                items[Random.Range(0, items.Count)] = new InventoryItem(GetItemByRarity(Rarity.Legendary));
+            }
         }
     }
 }
